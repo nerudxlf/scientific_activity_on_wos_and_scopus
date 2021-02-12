@@ -1,4 +1,5 @@
 *.xlsx
 *.csv
+*.xls
 .idea
 __pycache__
