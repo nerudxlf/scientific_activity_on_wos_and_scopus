@@ -29,10 +29,10 @@ def main():
     result_dict = {}
 
     for i in range(len(list_research_areas)):
-            if result_dict.get(list_research_areas[i]):
-                result_dict[list_research_areas[i]] += list_citation[i]
-            else:
-                result_dict |= {list_research_areas[i]: list_citation[i]}
+        if result_dict.get(list_research_areas[i]):
+            result_dict[list_research_areas[i]] += list_citation[i]
+        else:
+            result_dict |= {list_research_areas[i]: list_citation[i]}
 
     oecd_category_df_list = list_to_upper_case(oecd_category_df_list)
     oecd_category_df_dict = dict.fromkeys(oecd_category_df_list)
